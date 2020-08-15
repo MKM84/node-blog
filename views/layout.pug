@@ -1,0 +1,18 @@
+
+block variables
+
+html(lang="fr")
+  head
+    title  My Site  #{title} 
+    link(rel='stylesheet', href='/style.css', type='text/css')
+    script(src="/front.js")
+  body
+    header.the-head
+        .my-blog
+            h1 MY BLOG 2020
+            p Node.js is cool !
+        .lien-administration
+            a(class='btn' href='/admin') Administration
+
+
+    block content

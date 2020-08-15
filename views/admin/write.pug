@@ -1,0 +1,31 @@
+extends ../layout.pug
+
+block content
+    main
+        div.articles-blog
+            div
+                h2 Modifier
+                a(class='' href='/') Retour à la liste des articles
+
+                div.formulaire
+                    form(name="mon-formulaire",action="/admin/write",methode="post")
+                        p
+                            label(for="titre") Titre de l'article
+                            input(type="text", name="titre")
+                        p
+                            label(for="categorie") Catégorie
+                            select(name="categorie")
+                                each categorie in categories 
+                                    option(value= categorie.title) #{categorie.title}
+                        p
+                            label(for="auteur") Auteur
+                            select(name="auteur")
+                                each author in authors  
+                                    option(value= author.name) #{author.name}
+
+
+
+
+
+
+

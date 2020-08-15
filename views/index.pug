@@ -1,0 +1,33 @@
+extends layout.pug
+
+block content
+    main
+        .articles-blog
+            div
+                h2 Bienvenue sur mon blog
+                p Voici la liste des derniers articles du blog :
+
+        each article in articles        
+            .article
+                h3
+                    a(class='lire-suite' href='article/' + article.id)  #{article.title}
+                p.contenu #{article.content} 
+                a(class='lire-suite' href='article/' + article.id) Lire la suite
+                p.info-article Publié le&nbsp
+                        span.date #{article.dateCreated} &nbsp
+                        span.author par #{article.author.name}
+                        span.categorie #{article.category.title}
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+

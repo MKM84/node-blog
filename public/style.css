@@ -1,0 +1,101 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    a{
+     
+        color:rgb(63, 63, 63);
+    }
+    .the-head{
+        width: 80%;
+        background-color: rgb(60, 117, 174);
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+    
+        margin: 0 auto;
+        align-items: center;
+        text-align: left;
+        padding: 20px;
+    }
+    .the-head a{
+        background-color: rgb(101, 210, 193);
+        padding: 20px;
+    
+    }
+    a.nouvel-article{
+        background-color: rgb(101, 210, 193);
+        padding: 20px;  
+    }
+    
+    
+    
+    .articles-blog{
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+        text-align: left;
+        
+        
+    }
+    .article{
+        background-color: rgb(240, 240, 240);
+        padding: 20px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    p.info-article span.date{
+        color: indianred;
+    }
+    p.info-article span.author{
+        color: rgb(0, 51, 139);
+    }
+    p.info-article span.categorie{
+        color: rgb(58, 21, 21);
+        background-color: rgb(205, 205, 205);
+        padding: 7px;
+        margin-left: 10px;
+        
+    }
+    p.contenu{
+        display: inline;
+    }
+    
+    .article-page-article{
+        background-color: #fff;
+        padding: 20px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    table, td{
+        border: solid 1px rgb(147, 147, 147);
+        text-align: center;
+    }
+    table{
+        width: 100%;
+        margin: 0 auto;
+        background-color: #fff;
+        
+    }
+    .table-head{
+        background-color: rgb(157, 150, 193);
+    }
+    div.formulaire{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .lire-suite{
+        display: inline-block;
+    }
+    option{
+        color: #000;
+    }

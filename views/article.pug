@@ -1,0 +1,15 @@
+extends layout.pug
+
+block content
+    main
+        div.articles-blog
+            a(class='' href='/') Retour à la liste des articles
+          
+        .article-page-article
+            h3 #{article.title}
+            p.info-article Publié le 
+                span.date #{article.dateCreated},&nbsp
+                span.author Par #{article.author.name}
+                span.categorie #{article.category.title}
+            p #{article.content} 
+

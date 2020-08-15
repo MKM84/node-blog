@@ -1,0 +1,32 @@
+extends ../layout.pug
+
+block content
+    main
+        .articles-blog
+            div
+                h2 Bienvenue dans l'espace administration
+                p Cet espace vous permet de gérer et administrer les articles !
+
+            div
+                a(class='btn nouvel-article' href="") Publier un nouvel article
+            
+        div.article
+            table
+                tr.table-head
+                    td id
+                    td Date de publication
+                    td Titre
+                    td Auteur
+                    td Catégorie
+                    td Action
+            
+                each article in articles 
+                    tr 
+                        td #{article.id}
+                        td #{article.dateCreated}
+                        td #{article.title}
+                        td #{article.author.name}
+                        td #{article.category.title}
+                        td 
+                            a(class='' href="") Modifier 
+                            a(class='' href="")  Supprimer
